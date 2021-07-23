@@ -3,7 +3,7 @@ import {css} from 'react-emotion'
 const tagSelectedState = () => css`
   color: white;
   border-color: transparent;
-  background: #6f1167;
+  background: #2f0549;
 `
 
 export const labelBaseStyle = () => css`
@@ -43,13 +43,13 @@ export const tagBaseStyle = () => css`
   &:hover {
     color: white;
     border-color: transparent;
-    background: #b130a6;
+    background: #9c63c0;
   }
 
   &:active {
     color: white;
     border-color: transparent;
-    background: #87027b;
+    background: #4c0677;
   }
 `
 

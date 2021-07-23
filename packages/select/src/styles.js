@@ -4,7 +4,7 @@ export const inputBaseStyle = () => css`
   padding: 5px 0;
   color: #322828;
   box-sizing: border-box;
-  border-bottom: 1px solid #9B9B9B;
+  border-bottom: 1px solid #9b9b9b;
 `
 
 export const customSelectStyle = () => css`
@@ -65,10 +65,10 @@ export const dropdownStyle = () => css`
   padding: 0;
   width: 100%;
   list-style: none;
-  border: 0.5px solid #ADADAD;
+  border: 0.5px solid #adadad;
   background: white;
   border-radius: 1px;
-  box-shadow: 0 1px 0 0 rgba(0,0,0,0.06);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06);
 
   &::before {
     content: '';
@@ -77,7 +77,7 @@ export const dropdownStyle = () => css`
     right: calc(50% - 8px);
     width: 0;
     height: 0;
-    border-bottom: 8px solid #ADADAD;
+    border-bottom: 8px solid #adadad;
     border-top: 8px solid transparent;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -118,7 +118,7 @@ export const dropdownItemStyle = () => css`
   color: #322828;
 
   &:hover {
-    color: #B130A6;
+    color: #9c63c0;
   }
 `
 
@@ -144,7 +144,7 @@ export const arrowStyle = () => css`
     height: 3px;
     display: inline-block;
     position: absolute;
-    border-bottom: 9px solid #87027b;
+    border-bottom: 9px solid #4c0677;
     transform: rotate(0);
     top: 0px;
     left: 9px;
@@ -153,25 +153,27 @@ export const arrowStyle = () => css`
   &:before {
     transform: rotate(-135deg);
   }
-  
+
   &:after {
     transform: rotate(135deg);
     left: 5px;
   }
 `
 
-export const arrowOpenStyle = ({ isOpen }) => isOpen && css`
-  transform: rotate(0);
-  transform: translate(0, -6px);
+export const arrowOpenStyle = ({isOpen}) =>
+  isOpen &&
+  css`
+    transform: rotate(0);
+    transform: translate(0, -6px);
 
-  &:before {
-    transform: rotate(-45deg);
-  }
+    &:before {
+      transform: rotate(-45deg);
+    }
 
-  &:after {
-    transform: rotate(45deg);
-  }
-`
+    &:after {
+      transform: rotate(45deg);
+    }
+  `
 
 export const withLinkStyle = () => css`
   padding: 0 15px;
